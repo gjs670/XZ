@@ -19,33 +19,33 @@ export default new Router({
     *
     * /* ,
      {
-     path: '/dp/:id.html',
+     path: './dp/:id.html',
      name: 'dp',
      component: dp,
      children: [
-     {path: ':id', component: wulv}
+     {path: ':id', component: gjs}
      ]
      }
     * */
-    { path: '/', redirect: '/goods' },
+    { path: './', redirect: './goods' },
     {
-      path: '/goods',
+      path: './goods',
       name: 'goods',
       component: goods
     },
     {
-      path: '/ratings',
+      path: './ratings',
       name: 'ratings',
       component: ratings
     },
     {
-      path: '/seller',
+      path: './seller',
       name: 'seller',
       component: seller
     },
     {
-      path: '/*',
-      redirect: '/'
+      path: './*',
+      redirect: './'
     }
   ]
 })
